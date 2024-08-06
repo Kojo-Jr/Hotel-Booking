@@ -1,0 +1,249 @@
+/* body style */
+html,body {
+		scroll-behavior: smooth;
+		contain: paint;
+		margin: 0;
+		padding: 0;
+		/*display: flex;*/
+		/*justify-content: center;*/
+		/*align-items: center;*/
+		min-height: 100vh;
+		/*background: whitesmoke;/*linear-gradient(to bottom, #0f0c29, #302b63, #24243e);*/
+		background-image: url(../luxuryhotel/images/01.jpg);
+		background-repeat: no repeat;
+		background-size:cover;
+		background-position:100%;
+		color: black;
+		font-family: 'Jost', sans-serif;
+		overflow: hidden;
+	}
+
+	header {
+		display: flex;
+		justify-content: center;
+		padding: 5px;
+	}
+
+	header h1 {
+		position: relative;
+		top: 200px;
+		right: 15%;
+		font-size: 150px;
+		color: whitesmoke;
+	}
+	/* nav styles*/ 
+	/*header {
+		padding: 10px;
+		position: relative;
+		top: 0px;
+		background-color: white;
+	}
+
+	header li {
+		list-style: none;
+	}
+
+	header nav li a {
+		margin-right: 15px;
+		font-size: 20px;
+		color: #6d44b8;
+		text-decoration: none;
+
+	}
+
+	header li a:hover {
+		font-weight: 600;
+	}
+
+	header nav button {
+		float: right;
+		border: none;
+		outline:none;
+		background-color: #6d44b8;
+		border-radius: 5px;
+
+	}
+
+	header nav button a {
+		font-size: 1.5em;
+		font-weight: bolder;
+		margin-left: 15px;
+		color: white;
+		padding: 0, 5px, 5px, 0;
+	}
+
+	header nav button a:hover {
+		color: white;
+	}*/
+
+	/* style the form */
+
+
+	/*label {
+		font-size: 20px; 
+		padding: 2px;
+		font-weight: bold;
+
+	}*/   
+
+	form {
+		padding: 20px;
+	}
+
+	label {
+		display: flex;
+		justify-content: center;
+		font-weight: bold;
+		font-size: 2.3em;
+		color: #6d44b8;
+        margin: 60px;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+	}
+    
+	input[type='text'], input[type='email'], input[type='password']{
+		width: 80%;
+		height: 2vh;
+		padding: 8px;
+		display:flex;
+		justify-content: center;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+        background-color: #e0dede;
+        position: relative;
+        left: 25px;;
+	}
+
+	input[type='reset'], input[type='submit'] {
+		padding: 5px;
+		width: 60%;
+		margin: 10px auto;
+		display: flex;
+		justify-content: center;
+		font-weight: bolder;
+		font-size: 1em;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		cursor:pointer;
+		color: #6d44b8;
+		position: relative;
+		bottom: 90px;
+	}
+
+	input[type='reset']:hover, input[type='submit']:hover {
+		background: #6d44b8;
+		color: whitesmoke;
+	}
+
+	.form {
+		width: 300px;
+		height: 600px;
+		border-radius: 10px;
+		box-shadow: 5px 20px 50px #000;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: 100px;
+        float: right;
+        position: relative;
+        top: -320px;
+
+	}
+
+    /*hide the checkbox */
+    #chk {
+        display: none;
+    }
+
+    /*style the signup */
+
+    .signup {
+        position: relative;
+        width: 100%;
+        height: 95%;
+    }
+
+    /*style the login*/
+
+    .login label {
+        position: relative;
+        top: -65px;
+    }
+
+    .login {
+        height: 550px;
+        background-color: #eee;
+        border-radius: 60% / 10%;
+        transform: translateY(-160px);
+        transition: .8s ease-in-out;
+        position: relative;
+        top: 20%;
+    
+    }
+
+    .login input[type='submit'] {
+        background-color: white;
+    }
+
+    .login input[type='submit']:hover {
+        background-color: #6d44b8;
+    }
+
+    .login label {
+        color: #573b8a;
+        transform: scale(.6);
+    }
+
+    /*transform the login to slide up*/
+
+    #chk:checked ~ .login{
+        transform: translateY(-320px);
+    
+    }
+
+    #chk:checked ~ .login label {
+        transform: scale(1);
+    }
+
+    #chk:checked ~ .signup label {
+        transform: scale(.6);
+    }
+
+    #chk:checked ~ .signup {
+        transform: translateY(40px); 
+        transition: 1.0s ease-in-out;
+        height: 60%;
+        /*overflow: hidden;*/
+    }
+
+
+    /* Add this at the end of your CSS file */
+
+@media only screen and (max-width: 400px) {
+    .form {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        position: relative;
+        top: 50px; /* Adjust as needed to avoid the taskbar */
+    }
+
+    .login {
+        height: auto;
+        background-color: #eee;
+        border-radius: 10px;
+        transform: translateY(0);
+        transition: .8s ease-in-out;
+        position: relative;
+        top: 0;
+    }
+
+    .login input[type='submit'] {
+        width: 100%;
+        background-color: #6d44b8;
+        color: white;
+        position: relative;
+        bottom: 0;
+    }
+}
