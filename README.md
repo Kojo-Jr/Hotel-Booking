@@ -1,2 +1,2 @@
 # Hotel Booking Web App
-Hotel guest can register and book a room
+Hotel guests can register and book a room
